@@ -29,9 +29,9 @@ def connect_database():
 #         conn.commit()
         
 
-netflix_countries = pd.read_csv("netflix Top 10 Shows/all-weeks-countries.csv")
-netflix_global = pd.read_csv("netflix Top 10 Shows/all-weeks-global.csv")
-netflix_popular = pd.read_csv("netflix Top 10 Shows/most-popular.csv")
+netflix_countries = pd.read_csv("data/all-weeks-countries.csv")
+netflix_global = pd.read_csv("data/all-weeks-global.csv")
+netflix_popular = pd.read_csv("data/most-popular.csv")
 
 netflix_countries_short = netflix_countries[['country_name', 'category', 'weekly_rank', 'show_title', 'cumulative_weeks_in_top_10']]
 
